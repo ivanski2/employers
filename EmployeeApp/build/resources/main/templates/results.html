@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<html>
+<head>
+    <title>Results</title>
+</head>
+<body>
+<table class="table table-striped">
+    <thead class="thead-dark">
+    <tr>
+        <th>Employee ID #1</th>
+        <th>Employee ID #2</th>
+        <th>Project ID</th>
+        <th>Days Worked</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="row : ${results}">
+        <td th:text="${row[0]}"></td>
+        <td th:text="${row[1]}"></td>
+        <td th:text="${row[2]}"></td>
+        <td th:text="${row[3]}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
